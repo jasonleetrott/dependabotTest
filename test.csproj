@@ -10,11 +10,11 @@
 
 	  <!-- testing external nuget feed. this package doesnt exist in nuget.org 
 	  see nuget.config for feed.  this should update to 	24.1.6  -->
-	  <PackageReference Include="DevExpress.Reporting.Core" Version="23.2.6" />
+	  <!-- <PackageReference Include="DevExpress.Reporting.Core" Version="23.2.6" /> -->
 	  
 	  <!-- test that only  the VisionTrack nuget feed is queried for VisionTrack.* packages . shouldnt query  other repos sources 
 	  vt.messaging should update to 1.3.0  -->
-	  <PackageReference Include="VisionTrack.Messaging" Version="1.2.0" />
+	  <!-- <PackageReference Include="VisionTrack.Messaging" Version="1.2.0" /> -->
 
 
 	<!-- testing that the service fabric dont update past 8.0 except ms.sf which should not go to 11.*
