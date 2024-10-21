@@ -7,9 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+		<!-- Dependabot can update these 2 packages into a single pr. works ok   -->
+		<!-- 
 		<PackageReference Include="Microsoft.ApplicationInsights" Version="2.13.0" />  	  	  	  
+		<PackageReference Include="Microsoft.ServiceFabric.AspNetCore.Kestrel" Version="7.1.2338" />  	  	   
+		-->
+
+		<!-- Dependabot cannot update both these packages to 7.1.2448 in a single pr. it fails with nuget error  see   README.md file.  -->	
 		<PackageReference Include="Microsoft.ServiceFabric.AspNetCore.Kestrel" Version="7.1.2338" />  	  	  
-	  <!-- <PackageReference Include="Microsoft.ServiceFabric.Services.Remoting" Version="7.1.2338" /> -->
+	    <PackageReference Include="Microsoft.ServiceFabric.Services.Remoting" Version="7.1.2338" /> 
+
 
 <!-- #### dependency chain #####
 ms.serviceFabric.AspNetCore.Kestrel (7.1.2338 )
